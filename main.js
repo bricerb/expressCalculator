@@ -20,6 +20,7 @@ app.get('/:calc/:num1/:num2', function(req, res) {
   } else {
     result = "Incorrect Input...";
   }
+  res.send(result.toString());
 })
 
 app.listen(3000, function() {
